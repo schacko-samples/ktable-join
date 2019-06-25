@@ -1,4 +1,4 @@
-KStream-KTable join with Json Serde
+== KStream-KTable join with Json Serde
 
 Input 1: KStream<Integer, Cashflow>
 Input 2: KTable<Integer, Contract>
@@ -13,7 +13,7 @@ The main application also contains a test `StreamListener` that receives data fr
 
 Clone the repo and build the project:
 
-./mvnw clean package
+`./mvnw clean package`
 
 Run the application (IDE or CLI)
 

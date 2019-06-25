@@ -1,0 +1,23 @@
+KStream-KTable join with Json Serde
+
+Input 1: KStream<Integer, Cashflow>
+Input 2: KTable<Integer, Contract>
+
+Output: KStream<Integer, MyValueContainer> [See the class MyValueContainer for details]
+
+See the `application.properties` file for how the Serdes are configured.
+
+The main Kafka Streams processor receives the input data and do the join operation. Then it sends the output to another topic.
+
+The main application also contains a test `StreamListener` that receives data from the Kafka Streams processor output.
+
+Clone the repo and build the project:
+
+./mvnw clean package
+
+Run the application (IDE or CLI)
+
+This sample assumes that you run Kafka broker on localhost:9092. If that is not the case, change the configuration.
+
+Run the standalone main class `DataPublisher` to publish test data into cashflow and contract.
+Then watch the processor application console for the received data.

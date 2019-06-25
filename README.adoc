@@ -15,7 +15,7 @@ Clone the repo and build the project:
 
 `./mvnw clean package`
 
-Run the application (IDE or CLI)
+Run the application (IDE or CLI). If you are running from the IDE, the main class that you need to run is `JoinSampleApplication`. 
 
 This sample assumes that you run Kafka broker on localhost:9092. If that is not the case, change the configuration.
 
